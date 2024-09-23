@@ -893,8 +893,161 @@ left: 235px;
   max-height: 1000px; /* Adjust max-height as needed */
 }
 
-.discord {
 
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+  font-family: 'Urbanist', sans-serif;
+  line-height: 1.6;
+  padding-bottom: 900vh;
+}
+
+/* Centered text */
+.center-text {
+  position: absolute;
+  top: 260px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: black;
+  font-size: 70px;
+  font-weight: 700;
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    padding-bottom: 100vh; /* Shorter scroll on smaller devices */
+  }
+
+  .center-text {
+    font-size: 40px; /* Make text smaller */
+    top: 180px; /* Adjust positioning */
+  }
+
+  .small-description {
+    font-size: 18px;
+    top: 240px; /* Adjust based on content */
+  }
+
+  .products-button-container {
+    flex-direction: column;
+    width: auto;
+    gap: 10px; /* Stack buttons vertically */
+  }
+
+  .products-button {
+    width: 100%; /* Make buttons full-width */
+  }
+
+  .product-card {
+    width: 100%; /* Full-width cards */
+    margin: 10px 0; /* Space between stacked cards */
+  }
+
+  /* Reduce padding and reposition elements */
+  .about-us-section, .products-section, .reviews-section, .faqs-section {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .reviews-box, .reviews-box-2, .reviews-box-3,
+  .reviews-box-4, .reviews-box-5, .reviews-box-6,
+  .reviews-box-7, .reviews-box-8, .reviews-box-9 {
+    width: 100%; /* Full-width review boxes */
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  /* Collapse navigation items into a hamburger menu */
+  .nav-links {
+    display: none; /* Hide navigation for mobile */
+  }
+
+  /* Show a hamburger menu icon on mobile */
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .center-text {
+    font-size: 30px; /* Further reduce font size */
+  }
+
+  .button-container {
+    width: 100%; /* Make button container full-width */
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  /* Stack product buttons vertically */
+  .products-button-container {
+    flex-direction: column;
+  }
+
+  .product-card {
+    width: 100%;
+  }
+}
+
+/* Responsive Header */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  transition: background-color 0.3s ease;
+}
+
+.hamburger {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+  }
+}
+
+/* Responsive product cards */
+.product-card {
+  width: 300px;
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: #f4f4f4;
+}
+
+@media only screen and (max-width: 768px) {
+  .product-card {
+    width: 100%; /* Make each product full-width */
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
 
 
 
@@ -1032,7 +1185,7 @@ left: 235px;
       <li><img src="https://i.ibb.co/zQq81x1/verfied.png" alt="verified"> 100% Safe</li>
       <li><img src="https://i.ibb.co/zQq81x1/verfied.png" alt="verified"> Very Cheap</li>
     </ul>
-    <a href="https://blickbiz.sellauth.com" target="_blank" class="purchase-button">Purchase</a>
+    <a href="https://blickbiz.sellauth.com/product/135k-vbucks" target="_blank" class="purchase-button">Purchase</a>
   </div>
 
   <!-- Netflix Lifetime Product Card -->
@@ -1044,7 +1197,7 @@ left: 235px;
       <li><img src="https://i.ibb.co/zQq81x1/verfied.png" alt="verified"> Quick delivery</li>
       <li><img src="https://i.ibb.co/zQq81x1/verfied.png" alt="verified"> Separate account</li>
     </ul>
-    <a href="https://blickbiz.sellauth.com" target="_blank" class="purchase-button">Purchase</a>
+    <a href="https://blickbiz.sellauth.com/product/netflix-lifetime" target="_blank" class="purchase-button">Purchase</a>
   </div>
 
   <!-- Spotify Lifetime Product Card -->
@@ -1056,7 +1209,7 @@ left: 235px;
       <li><img src="https://i.ibb.co/zQq81x1/verfied.png" alt="verified"> Quick delivery</li>
       <li><img src="https://i.ibb.co/zQq81x1/verfied.png" alt="verified"> Separate account</li>
     </ul>
-    <a href="https://blickbiz.sellauth.com" target="_blank" class="purchase-button">Purchase</a>
+    <a href="https://blickbiz.sellauth.com/product/spotify-lifetime" target="_blank" class="purchase-button">Purchase</a>
   </div>
 
   <!-- Spotify Main Lifetime Product Card -->
@@ -1068,7 +1221,7 @@ left: 235px;
       <li><img src="https://i.ibb.co/zQq81x1/verfied.png" alt="verified"> Quick delivery</li>
       <li><img src="https://i.ibb.co/zQq81x1/verfied.png" alt="verified"> On your account</li>
     </ul>
-    <a href="https://blickbiz.sellauth.com" target="_blank" class="purchase-button">Purchase</a>
+    <a href="https://blickbiz.sellauth.com/product/spotify-main-lifetime" target="_blank" class="purchase-button">Purchase</a>
   </div>
 
   <!-- Disney+ Lifetime Product Card -->
@@ -1080,7 +1233,7 @@ left: 235px;
       <li><img src="https://i.ibb.co/zQq81x1/verfied.png" alt="verified"> Quick delivery</li>
       <li><img src="https://i.ibb.co/zQq81x1/verfied.png" alt="verified"> Separate account</li>
     </ul>
-    <a href="https://blickbiz.sellauth.com" target="_blank" class="purchase-button">Purchase</a>
+    <a href="https://blickbiz.sellauth.com/product/disney-lifetime" target="_blank" class="purchase-button">Purchase</a>
   </div>
 
   <!-- Crunchyroll Lifetime Product Card -->
@@ -1092,7 +1245,7 @@ left: 235px;
       <li><img src="https://i.ibb.co/zQq81x1/verfied.png" alt="verified"> Quick delivery</li>
       <li><img src="https://i.ibb.co/zQq81x1/verfied.png" alt="verified"> Separate account</li>
     </ul>
-    <a href="https://blickbiz.sellauth.com" target="_blank" class="purchase-button">Purchase</a>
+    <a href="https://blickbiz.sellauth.com/product/crunchyroll-lifetime" target="_blank" class="purchase-button">Purchase</a>
   </div>
 
   <!-- Dazn Lifetime Product Card -->
@@ -1104,7 +1257,7 @@ left: 235px;
       <li><img src="https://i.ibb.co/zQq81x1/verfied.png" alt="verified"> Quick delivery</li>
       <li><img src="https://i.ibb.co/zQq81x1/verfied.png" alt="verified"> Separate account</li>
     </ul>
-    <a href="https://blickbiz.sellauth.com" target="_blank" class="purchase-button">Purchase</a>
+    <a href="https://blickbiz.sellauth.com/product/dazn-lifetime" target="_blank" class="purchase-button">Purchase</a>
   </div>
 
   <!-- HBOMax Lifetime Product Card -->
@@ -1116,7 +1269,7 @@ left: 235px;
       <li><img src="https://i.ibb.co/zQq81x1/verfied.png" alt="verified"> Quick delivery</li>
       <li><img src="https://i.ibb.co/zQq81x1/verfied.png" alt="verified"> Separate account</li>
     </ul>
-    <a href="https://blickbiz.sellauth.com" target="_blank" class="purchase-button">Purchase</a>
+    <a href="https://blickbiz.sellauth.com/product/hbomax-lifetime" target="_blank" class="purchase-button">Purchase</a>
   </div>
 
   <!-- NordVPN Lifetime Product Card -->
@@ -1128,7 +1281,7 @@ left: 235px;
       <li><img src="https://i.ibb.co/zQq81x1/verfied.png" alt="verified"> Quick delivery</li>
       <li><img src="https://i.ibb.co/zQq81x1/verfied.png" alt="verified"> Separate account</li>
     </ul>
-    <a href="https://blickbiz.sellauth.com" target="_blank" class="purchase-button">Purchase</a>
+    <a href="https://blickbiz.sellauth.com/product/nordvpn-lifetime" target="_blank" class="purchase-button">Purchase</a>
   </div>
 
   <!-- 1K TikTok Followers Product Card -->
@@ -1140,7 +1293,7 @@ left: 235px;
       <li><img src="https://i.ibb.co/zQq81x1/verfied.png" alt="verified"> 5-10 min delivery</li>
       <li><img src="https://i.ibb.co/zQq81x1/verfied.png" alt="verified"> Very Cheap</li>
     </ul>
-    <a href="https://blickbiz.sellauth.com" target="_blank" class="purchase-button">Purchase</a>
+    <a href="https://blickbiz.sellauth.com/product/tiktok-social-media" target="_blank" class="purchase-button">Purchase</a>
   </div>
 
   <!-- 1K TikTok Likes Product Card -->
@@ -1152,7 +1305,7 @@ left: 235px;
       <li><img src="https://i.ibb.co/zQq81x1/verfied.png" alt="verified"> 5-10 min delivery</li>
       <li><img src="https://i.ibb.co/zQq81x1/verfied.png" alt="verified"> Very Cheap</li>
     </ul>
-    <a href="https://blickbiz.sellauth.com" target="_blank" class="purchase-button">Purchase</a>
+    <a href="https://blickbiz.sellauth.com/product/tiktok-social-media" target="_blank" class="purchase-button">Purchase</a>
   </div>
 
   <!-- 1K TikTok Views Product Card -->
@@ -1164,7 +1317,7 @@ left: 235px;
       <li><img src="https://i.ibb.co/zQq81x1/verfied.png" alt="verified"> 5-10 min delivery</li>
       <li><img src="https://i.ibb.co/zQq81x1/verfied.png" alt="verified"> Very Cheap</li>
     </ul>
-    <a href="https://blickbiz.sellauth.com" target="_blank" class="purchase-button">Purchase</a>
+    <a href="https://blickbiz.sellauth.com/product/tiktok-social-media" target="_blank" class="purchase-button">Purchase</a>
   </div>
 
   <!-- 1K Insta Followers Product Card -->
@@ -1176,7 +1329,7 @@ left: 235px;
       <li><img src="https://i.ibb.co/zQq81x1/verfied.png" alt="verified"> 5-10 min delivery</li>
       <li><img src="https://i.ibb.co/zQq81x1/verfied.png" alt="verified"> Very Cheap</li>
     </ul>
-    <a href="https://blickbiz.sellauth.com" target="_blank" class="purchase-button">Purchase</a>
+    <a href="https://blickbiz.sellauth.com/product/instagram-social-media" target="_blank" class="purchase-button">Purchase</a>
   </div>
 
   <!-- 1K Insta Likes Product Card -->
@@ -1188,7 +1341,7 @@ left: 235px;
       <li><img src="https://i.ibb.co/zQq81x1/verfied.png" alt="verified"> 5-10 min delivery</li>
       <li><img src="https://i.ibb.co/zQq81x1/verfied.png" alt="verified"> Very Cheap</li>
     </ul>
-    <a href="https://blickbiz.sellauth.com" target="_blank" class="purchase-button">Purchase</a>
+    <a href="https://blickbiz.sellauth.com/product/instagram-social-media" target="_blank" class="purchase-button">Purchase</a>
   </div>
 
   <!-- 1K Insta Views Product Card -->
@@ -1200,7 +1353,7 @@ left: 235px;
       <li><img src="https://i.ibb.co/zQq81x1/verfied.png" alt="verified"> 5-10 min delivery</li>
       <li><img src="https://i.ibb.co/zQq81x1/verfied.png" alt="verified"> Very Cheap</li>
     </ul>
-    <a href="https://blickbiz.sellauth.com" target="_blank" class="purchase-button">Purchase</a>
+    <a href="https://blickbiz.sellauth.com/product/instagram-social-media" target="_blank" class="purchase-button">Purchase</a>
   </div>
 
   <!-- 1K Youtube Followers Product Card -->
@@ -1212,7 +1365,7 @@ left: 235px;
       <li><img src="https://i.ibb.co/zQq81x1/verfied.png" alt="verified"> 5-10 min delivery</li>
       <li><img src="https://i.ibb.co/zQq81x1/verfied.png" alt="verified"> Very Cheap</li>
     </ul>
-    <a href="https://blickbiz.sellauth.com" target="_blank" class="purchase-button">Purchase</a>
+    <a href="https://blickbiz.sellauth.com/product/youtube-social-media" target="_blank" class="purchase-button">Purchase</a>
   </div>
 
   <!-- 1K Youtube Likes Product Card -->
@@ -1224,7 +1377,7 @@ left: 235px;
       <li><img src="https://i.ibb.co/zQq81x1/verfied.png" alt="verified"> 5-10 min delivery</li>
       <li><img src="https://i.ibb.co/zQq81x1/verfied.png" alt="verified"> Very Cheap</li>
     </ul>
-    <a href="https://blickbiz.sellauth.com" target="_blank" class="purchase-button">Purchase</a>
+    <a href="https://blickbiz.sellauth.com/product/youtube-social-media" target="_blank" class="purchase-button">Purchase</a>
   </div>
 
   <!-- 1K Youtube Views Product Card -->
@@ -1236,19 +1389,19 @@ left: 235px;
       <li><img src="https://i.ibb.co/zQq81x1/verfied.png" alt="verified"> 5-10 min delivery</li>
       <li><img src="https://i.ibb.co/zQq81x1/verfied.png" alt="verified"> Very Cheap</li>
     </ul>
-    <a href="https://blickbiz.sellauth.com" target="_blank" class="purchase-button">Purchase</a>
+    <a href="https://blickbiz.sellauth.com/product/youtube-social-media" target="_blank" class="purchase-button">Purchase</a>
   </div>
 
   <!-- Discord Nitro 1 Month Product Card -->
   <div class="product-card" data-category="nitro">
     <h2>Discord Nitro 1 Month</h2>
-    <div class="price">$6.00</div>
+    <div class="price">$5.00</div>
     <ul class="features">
       <li><img src="https://i.ibb.co/zQq81x1/verfied.png" alt="verified"> Can be stacked</li>
       <li><img src="https://i.ibb.co/zQq81x1/verfied.png" alt="verified"> 100% Safe</li>
       <li><img src="https://i.ibb.co/zQq81x1/verfied.png" alt="verified"> Server Boosts Included</li>
     </ul>
-    <a href="https://blickbiz.sellauth.com" target="_blank" class="purchase-button">Purchase</a>
+    <a href="https://blickbiz.sellauth.com/product/nitro-1-month" target="_blank" class="purchase-button">Purchase</a>
   </div>
 
   <!-- Discord Nitro 1 Year Product Card -->
@@ -1260,8 +1413,31 @@ left: 235px;
       <li><img src="https://i.ibb.co/zQq81x1/verfied.png" alt="verified"> 100% Safe</li>
       <li><img src="https://i.ibb.co/zQq81x1/verfied.png" alt="verified"> Server Boosts Included</li>
     </ul>
-    <a href="https://blickbiz.sellauth.com" target="_blank" class="purchase-button">Purchase</a>
+    <a href="https://blickbiz.sellauth.com/product/nitro-1-year" target="_blank" class="purchase-button">Purchase</a>
   </div>
+  
+ <div class="product-card" data-category="nitro">
+  <h2>14 Boosts (1 Month)</h2>
+  <div class="price">$7.50</div>
+  <ul class="features">
+    <li><img src="https://i.ibb.co/zQq81x1/verfied.png" alt="verified"> 100% Safe</li>
+    <li><img src="https://i.ibb.co/zQq81x1/verfied.png" alt="verified"> Cheap</li>
+    <li><img src="https://i.ibb.co/zQq81x1/verfied.png" alt="verified"> No watermark</li>
+  </ul>
+  <a href="https://blickbiz.sellauth.com/product/14-boosts-1-month" target="_blank" class="purchase-button">Purchase</a>
+</div>
+
+<!-- Add Nitro product card for 14 Server Boosts (3 Months) -->
+<div class="product-card" data-category="nitro">
+  <h2>14 Boosts (3 Months)</h2>
+  <div class="price">$12.50</div>
+  <ul class="features">
+    <li><img src="https://i.ibb.co/zQq81x1/verfied.png" alt="verified"> 100% Safe</li>
+    <li><img src="https://i.ibb.co/zQq81x1/verfied.png" alt="verified"> Cheap</li>
+    <li><img src="https://i.ibb.co/zQq81x1/verfied.png" alt="verified"> No watermark</li>
+  </ul>
+  <a href="https://blickbiz.sellauth.com/product/14-boosts-3-months" target="_blank" class="purchase-button">Purchase</a>
+</div>
 
   <!-- First Product Card: 1000 R$ Robux -->
   <div class="product-card" data-category="robux">
@@ -1272,7 +1448,7 @@ left: 235px;
       <li><img src="https://i.ibb.co/zQq81x1/verfied.png" alt="verified"> Before Tax</li>
       <li><img src="https://i.ibb.co/zQq81x1/verfied.png" alt="verified"> Sent Via Gamepass</li>
     </ul>
-    <a href="https://blickbiz.sellauth.com" target="_blank" class="purchase-button">Purchase</a>
+    <a href="https://blickbiz.sellauth.com/product/1000-r-robux" target="_blank" class="purchase-button">Purchase</a>
   </div>
 
   <!-- Second Product Card: 2500 R$ Robux -->
@@ -1284,7 +1460,7 @@ left: 235px;
       <li><img src="https://i.ibb.co/zQq81x1/verfied.png" alt="verified"> Before Tax</li>
       <li><img src="https://i.ibb.co/zQq81x1/verfied.png" alt="verified"> Sent Via Gamepass</li>
     </ul>
-    <a href="https://blickbiz.sellauth.com" target="_blank" class="purchase-button">Purchase</a>
+    <a href="https://blickbiz.sellauth.com/product/2500-r-robux-bt" target="_blank" class="purchase-button">Purchase</a>
   </div>
 
   <!-- Third Product Card: 5000 R$ Robux -->
@@ -1296,7 +1472,7 @@ left: 235px;
       <li><img src="https://i.ibb.co/zQq81x1/verfied.png" alt="verified"> Before Tax</li>
       <li><img src="https://i.ibb.co/zQq81x1/verfied.png" alt="verified"> Sent Via Gamepass</li>
     </ul>
-    <a href="https://blickbiz.sellauth.com" target="_blank" class="purchase-button">Purchase</a>
+    <a href="https://blickbiz.sellauth.com/product/5000-r-robux" target="_blank" class="purchase-button">Purchase</a>
   </div>
 
   <!-- Fourth Product Card: 7500 R$ Robux -->
@@ -1308,7 +1484,7 @@ left: 235px;
       <li><img src="https://i.ibb.co/zQq81x1/verfied.png" alt="verified"> Before Tax</li>
       <li><img src="https://i.ibb.co/zQq81x1/verfied.png" alt="verified"> Sent Via Gamepass</li>
     </ul>
-    <a href="https://blickbiz.sellauth.com" target="_blank" class="purchase-button">Purchase</a>
+    <a href="https://blickbiz.sellauth.com/product/7500-r-robux" target="_blank" class="purchase-button">Purchase</a>
   </div>
 
   <!-- Fifth Product Card: 10000 R$ Robux -->
@@ -1320,7 +1496,7 @@ left: 235px;
       <li><img src="https://i.ibb.co/zQq81x1/verfied.png" alt="verified"> Before Tax</li>
       <li><img src="https://i.ibb.co/zQq81x1/verfied.png" alt="verified"> Sent Via Gamepass</li>
     </ul>
-    <a href="https://blickbiz.sellauth.com" target="_blank" class="purchase-button">Purchase</a>
+    <a href="https://blickbiz.sellauth.com/product/10000-r-robux-bt" target="_blank" class="purchase-button">Purchase</a>
   </div>
 </div>
 
@@ -1747,9 +1923,7 @@ We value customer feedback and strive for excellence.<br>
       How do I get my product after paying?
     </div>
     <div class="faq-answer">
-      You will receive an order summary via email.<br>
-      If purchasing Robux or subscriptions, you will go to the redeem page and receive your Robux/subscription automatically.<br>
-      For other orders, please create a ticket in Blick's Discord server with your order ID.
+      You will receive an order summary via email, please create a ticket in Blick's Discord server with your order ID.
     </div>
   </div>
 
