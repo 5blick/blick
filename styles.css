@@ -1,0 +1,1555 @@
+
+
+.footer {
+    background-color: #161616;
+    padding: 40px 20px;
+    border-radius: 10px;
+    color: #ffffff;
+    font-family: 'Lexend', sans-serif;
+    margin-top: 50px; /* Makes it higher off the bottom of the screen */
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-left, .footer-right {
+    flex: 1 1 300px;
+    margin: 10px;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+}
+
+.footer-logo .logo {
+    width: 50px;
+    height: auto;
+}
+
+.footer-company-name {
+    font-size: 24px;
+    color: #ffffff;
+    margin-left: 20px;
+}
+
+.footer-description {
+    color: #888888;
+    font-size: 14px;
+    margin-top: 30px;
+    line-height: 1.6;
+}
+
+/* Footer Navigation Heading */
+.footer-nav-heading {
+    font-family: 'Lexend', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Footer Navigation Links */
+.footer-nav {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two-column grid */
+    gap: 10px;
+    text-align: center;
+}
+
+.footer-link {
+    color: #888888;
+    font-size: 16px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-link:hover {
+    color: #ffffff;
+}
+
+/* Footer Bottom Text */
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer-bottom p {
+    color: #393939;
+    font-size: 14px;
+}
+
+/* Mobile adjustments for Footer */
+@media screen and (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-left, .footer-right {
+        margin: 20px 0;
+    }
+
+    .footer-nav {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px; /* Adjust gap for mobile */
+    }
+
+    .footer-nav-heading {
+        font-size: 16px;
+        text-align: center;
+    }
+}
+
+
+
+/* TERMS Section Styling */
+.terms-section {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 120px 15px;
+    font-family: 'Lexend', sans-serif;
+    text-align: center;
+}
+
+.terms-section h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.8em;
+    font-weight: 700;
+    color: #fff;
+    margin: 0;
+}
+
+.terms-section .terms-subtitle {
+    font-family: 'Lexend', sans-serif;
+    font-size: 0.9em;
+    color: #716E6C;
+    font-weight: 300;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+.terms-box {
+    background-color: var(--card-bg);
+    border-radius: var(--border-radius);
+    padding: 20px;
+    max-width: 600px;
+    margin: 30px auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: left;
+    color: #d0d0d0;
+    font-family: 'Lexend', sans-serif;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.terms-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.terms-box h3 {
+    font-size: 1.4em;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.terms-box ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.terms-box ul li {
+    margin-bottom: 8px;
+    line-height: 1.6;
+}
+
+.terms-box ul li strong {
+    color: var(--primary-color);
+}
+
+
+.faq-section {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px 15px; /* Reduced padding to bring content closer */
+    font-family: 'Lexend', sans-serif;
+    margin-top: -30px; /* Adjusted to bring FAQ section closer to header */
+    text-align: center; /* Center align the FAQ section */
+}
+
+.faq-box {
+    background-color: #1C1121;
+    border-radius: 10px;
+    margin-top: -15px; /* Move boxes even closer together */
+    padding: 20px 20px; /* Increase padding for larger box */
+    font-size: 1.1em;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    transition: background-color 0.3s ease;
+}
+
+
+.faq-box.active {
+    background-color: #2a2a2a;
+}
+
+.faq-question {
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq-question .arrow {
+    transition: transform 0.3s ease;
+}
+
+.faq-box.active .arrow {
+    transform: rotate(180deg);
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+    padding-top: 8px;
+    font-size: 1em;
+    color: #d0d0d0;
+    line-height: 1.4;
+
+}
+
+.glowing-faq .faq-question {
+    color: #ffffff; /* White text */
+    position: relative;
+    font-weight: 600;
+    text-shadow: 0 0 10px rgba(185, 72, 237, 0.8), 0 0 20px rgba(185, 72, 237, 0.5); /* Purple glow effect */
+}
+
+.glowing-faq .faq-question .arrow {
+    color: #ffffff;
+}
+
+
+
+/* Mobile adjustments */
+@media (max-width: 600px) {
+    .faq-section {
+        max-width: 100%; /* Full width on smaller screens */
+        padding: 10px;
+    }
+    .faq-box {
+        padding: 10px; /* Reduced padding for mobile */
+        margin-bottom: 5px; /* Minimal gap */
+    }
+    .faq-question {
+        font-size: 0.9em; /* Slightly smaller font */
+    }
+    .faq-answer {
+        font-size: 0.85em;
+    }
+}
+
+
+
+
+
+/* FAQ Section Header Styling */
+.faq-section {
+    text-align: center; /* Center align the FAQ section */
+    padding: 130px 0; /* Add spacing above and below for visual separation */
+}
+
+.faq-section h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.8em;
+    font-weight: 700;
+    color: #fff; /* Keep the same white color as specified */
+    margin: 0;
+    line-height: 1.2;
+}
+
+.faq-section .faq-subtitle {
+    font-family: 'Lexend', sans-serif;
+    font-size: 0.9em;
+    color: #716E6C; /* Subtitle color */
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+.superscript {
+    font-size: 0.6em;
+    vertical-align: super;
+}
+
+.product-grid .product-card {
+    opacity: 0;
+    transform: translateY(20px); /* All animations start from the top */
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.product-grid .product-card.animate-active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Staggered animation delays */
+.product-grid .product-card:nth-child(3n+1) {
+    transition-delay: 0.1s;
+}
+
+.product-grid .product-card:nth-child(3n+2) {
+    transition-delay: 0.2s;
+}
+
+.product-grid .product-card:nth-child(3n) {
+    transition-delay: 0.3s;
+}
+
+/* For two-column grid on smaller screens */
+@media (max-width: 900px) {
+    .product-grid .product-card:nth-child(2n+1) {
+        transition-delay: 0.1s;
+    }
+    .product-grid .product-card:nth-child(2n) {
+        transition-delay: 0.2s;
+    }
+}
+
+/* For single-column grid on very small screens */
+@media (max-width: 600px) {
+    .product-grid .product-card {
+        transition-delay: 0.1s;
+    }
+}
+
+
+.browse-button .button-arrow img {
+    transition: transform 0.3s ease;
+    vertical-align: middle; /* Centers the icon */
+}
+
+.browse-button:hover .button-arrow img {
+    transform: translateX(4px); /* Moves arrow to the right on hover */
+}
+
+
+:root {
+    --primary-color: #B948ED;
+    --secondary-color: #ff4f81;
+    --background-color: #100415;
+    --card-bg: #1C1121;
+    --button-bg: #B948ED;
+    --button-hover-bg: #9336b7;
+    --text-light: #f5f5f5;
+    --text-muted: #9a9a9a;
+    --border-radius: 14px;
+}
+
+/* Reset Body Padding and Margin */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    font-family: 'Lexend', sans-serif;
+    color: var(--text-light);
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Main Products Section */
+.products-section {
+    padding: 10px 5%; /* Reduced top padding only */
+    background-color: var(--background-color);
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Standardized gap between product groups */
+    margin: 0;
+}
+
+/* Product Group */
+.product-group {
+    margin-bottom: 20px; /* Reduced spacing between groups */
+}
+
+.product-group h2 {
+    font-family: 'Lexend', sans-serif;
+    font-size: 1.8em; /* Keep font size for visibility */
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 10px; /* Reduced bottom margin */
+    margin-top: 0; /* Ensure no extra top margin */
+    text-align: center;
+    line-height: 1.2;
+}
+
+/* Product Grid */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px; /* Balanced gap between cards */
+}
+
+@media (max-width: 900px) {
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Product Card */
+.product-card {
+    background-color: var(--card-bg);
+    border-radius: var(--border-radius);
+    padding: 20px; /* Keep padding for content spacing */
+    color: var(--text-light);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+    padding-top: 15px;
+}
+
+.product-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+}
+
+.product-title {
+    display: flex;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif; /* Distinct font for title */
+    font-size: 1.5em; /* Larger font size for title */
+    font-weight: 700;
+    color: var(--primary-color); /* Same primary color */
+    margin-top: 5px; /* Moves title closer to the top */
+    margin-bottom: 8px; /* Adds spacing below the title */
+}
+
+.product-title i {
+    font-size: 1.5em;
+    color: var(--primary-color);
+    margin-right: 8px;
+}
+
+.price {
+    font-size: 2em; /* Large font size for visibility */
+    font-weight: 700;
+    color: var(--primary-color);
+    margin: 0 0 2px; /* Remove top margin and reduce bottom margin */
+}
+
+
+/* Stock Info */
+.stock {
+    font-size: 0.9em;
+    color: var(--text-muted);
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+/* Features List */
+.features {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 10px;
+    font-size: 0.9em;
+    color: var(--text-muted);
+}
+
+.features li {
+    display: flex;
+    align-items: center;
+    margin: 3px 0; /* Reduced spacing between features */
+}
+
+.features li::before {
+    content: "";
+    display: inline-block;
+    background-image: url('https://static-00.iconduck.com/assets.00/verify-icon-2048x2046-525bfo8g.png');
+    background-size: contain;
+    width: 16px; /* Adjust size as needed */
+    height: 16px;
+    margin-right: 6px;
+    vertical-align: middle;
+    filter: invert(1) brightness(100); /* Turns icon white */
+}
+
+/* CSS for displaying the Robux icon in the top-right corner of Robux B/T and Robux A/T cards */
+.product-group-card h2:has(>.fa-robot) + .product-grid .product-card::before {
+    content: "";
+    background-image: url('https://devforum-uploads.s3.dualstack.us-east-2.amazonaws.com/uploads/original/4X/0/e/e/0eeeb19633422b1241f4306419a0f15f39d58de9.png');
+    background-size: 35px 35px; /* Adjust icon size */
+    background-repeat: no-repeat;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 35px;
+    right: 35px;
+    filter: invert(1) brightness(100); /* Makes the icon white */
+    z-index: 10; /* Ensures it appears above other elements */
+}
+
+/* CSS for displaying the Vbucks icon in the top-right corner of Vbucks cards */
+.product-group-card h2:has(>.fa-coins) + .product-grid .product-card::before {
+    content: "";
+    background-image: url('data:image/png;base64,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');
+    background-size: 35px 35px; /* Adjust icon size */
+    background-repeat: no-repeat;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    filter: invert(1) brightness(100); /* Makes the icon white */
+    z-index: 10; /* Ensures it appears above other elements */
+}
+
+/* CSS for displaying the Nitro icon in the top-right corner of Nitro cards */
+.product-group-card h2:has(>.fa-rocket) + .product-grid .product-card::before {
+    content: "";
+    background-image: url('https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/636e0a6918e57475a843f59f_icon_clyde_black_RGB.svg');
+    background-size: 35px 35px; /* Adjust icon size */
+    background-repeat: no-repeat;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    filter: invert(1) brightness(100); /* Makes the icon white */
+    z-index: 10; /* Ensures it appears above other elements */
+}
+
+/* CSS for displaying the Server Boosts icon in the top-right corner of Server Boosts cards */
+.product-group-card h2:has(>.fa-server) + .product-grid .product-card::before {
+    content: "";
+    background-image: url('https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/636e0a6918e57475a843f59f_icon_clyde_black_RGB.svg');
+    background-size: 35px 35px; /* Adjust icon size */
+    background-repeat: no-repeat;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    filter: invert(1) brightness(100); /* Makes the icon white */
+    z-index: 10; /* Ensures it appears above other elements */
+}
+
+/* CSS for displaying the Subscriptions icon in the top-right corner of Subscriptions cards */
+.product-group-card h2:has(>.fa-film) + .product-grid .product-card::before {
+    content: "";
+    background-image: url('https://cdn-icons-png.flaticon.com/512/0/375.png');
+    background-size: 35px 35px; /* Adjust icon size */
+    background-repeat: no-repeat;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    filter: invert(1) brightness(100); /* Makes the icon white */
+    z-index: 10; /* Ensures it appears above other elements */
+}
+
+/* CSS for displaying the TikTok icon in the top-right corner of TikTok cards */
+.product-group-card h2:has(>.fab.fa-tiktok) + .product-grid .product-card::before {
+    content: "";
+    background-image: url('https://i.ibb.co/HtHnJ4c/image.png');
+    background-size: 30px 35px; /* Adjust icon size */
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 35px;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    z-index: 10; /* Ensures it appears above other elements */
+}
+
+/* CSS for displaying the Instagram icon in the top-right corner of Instagram cards */
+.product-group-card h2:has(>.fab.fa-instagram) + .product-grid .product-card::before {
+    content: "";
+    background-image: url('https://i.ibb.co/8mM1pv6/image.png');
+    background-size: 30px 30px; /* Adjust icon size */
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    z-index: 10; /* Ensures it appears above other elements */
+}
+
+/* CSS for displaying the YouTube icon in the top-right corner of YouTube cards */
+.product-group-card h2:has(>.fab.fa-youtube) + .product-grid .product-card::before {
+    content: "";
+    background-image: url('https://i.ibb.co/LSqmz24/image.png');
+    background-size: 35px 27px; /* Adjust icon size */
+    background-repeat: no-repeat;
+    width: 35px;
+    height: 27px;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    z-index: 10; /* Ensures it appears above other elements */
+}
+
+
+/* Status Badge */
+.status {
+    background-color: #fff;
+    color: #333;
+    padding: 4px 8px; /* Compact padding */
+    border-radius: 8px;
+    font-size: 0.8em;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+/* Purchase button styling */
+.purchase-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #fff;
+    background: var(--button-bg);
+    border-radius: 25px;
+    text-decoration: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Hover effect to make the button rise slightly */
+.purchase-button:hover {
+    transform: translateY(-5px); /* Moves the button up */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Shine effect using ::after pseudo-element */
+.purchase-button::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -150%;
+    width: 300%;
+    height: 100%;
+    background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+    transform: skewX(-45deg);
+    transition: left 0.6s ease-in-out;
+    opacity: 0; /* Initially invisible */
+}
+
+/* Hover effect to activate shine immediately after rise */
+.purchase-button:hover::after {
+    left: 100%;
+    opacity: 1; /* Shine starts immediately */
+}
+
+
+
+/* Animation for elements coming from the top */
+.animate-from-top {
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.animate-from-top.animate-active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Staggered Animation for Info Boxes */
+.animate-staggered-1 {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    transition-delay: 0.3s;
+}
+
+.animate-staggered-1.animate-active {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.animate-staggered-2 {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    transition-delay: 0.6s; /* Delayed animation */
+}
+
+.animate-staggered-2.animate-active {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+
+
+/* Specific styling for the Products section */
+.products-section {
+  position: relative;
+      top: 140px;
+}
+
+.products-section .about-us-subtitle {
+    margin-top: -10px; /* Decrease or adjust this value as needed */
+}
+
+
+/* Info Grid Styling */
+.info-grid {
+    position: relative;
+    top: 65px;
+    left: 0;
+    margin-top: 30px;    /* Move down */
+    margin-left: 3%;     /* Move right */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-right: 4%;
+    font-family: 'Lexend', sans-serif;
+}
+
+/* Info Box Styling */
+.info-box {
+    background: linear-gradient(135deg, #1e1e1e, #2a2a2a);
+    border-radius: 20px;
+    padding: 15px 20px 20px;
+    color: #ffffff;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.info-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.5);
+}
+
+.info-box::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(185, 72, 237, 0.2), transparent 70%);
+  transform: scale(0);
+  transition: transform 0.5s ease;
+}
+
+.info-box:hover::before {
+  transform: scale(1);
+  background: radial-gradient(circle, rgba(185, 72, 237, 0.2), transparent 70%);
+}
+
+
+
+.icon-container {
+  font-size: 2.5em; /* Reduced icon size */
+  color: #B948ED;
+  margin-bottom: 10px; /* Reduced space below icon */
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.info-box:hover .icon-container {
+    color: #ffffff;
+    transform: rotate(15deg);
+}
+
+/* Title Styling */
+.info-box h3 {
+  font-size: 1.5em;
+  margin-top: 0; /* Remove any default margin-top */
+  margin-bottom: 10px;
+  color: #B948ED;
+  font-family: 'Montserrat', sans-serif;
+  transition: color 0.3s ease;
+}
+
+.info-box p {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #d0d0d0;
+    font-family: 'Lexend', sans-serif;
+    transition: color 0.3s ease;
+    margin-bottom: 0;
+    min-height: 60px; /* Ensure at least 3 lines */
+}
+
+.info-box:hover h3,
+.info-box:hover p {
+    color: #ffffff;
+}
+
+/* Shine Effect */
+.info-box::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -75%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(
+        120deg,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0.2) 50%,
+        rgba(255, 255, 255, 0) 100%
+    );
+    transform: skewX(-25deg);
+    transition: left 0.7s ease;
+}
+
+.info-box:hover::after {
+    left: 150%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .info-grid {
+        grid-template-columns: 1fr;
+        gap: 20px; /* Keep reduced gap on mobile */
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .info-box {
+        padding: 15px 20px 20px; /* Consistent padding on mobile */
+    }
+
+    .icon-container {
+        font-size: 2em; /* Further reduce icon size on mobile */
+        margin-bottom: 10px;
+    }
+
+    .info-box h3 {
+        font-size: 1.3em;
+    }
+
+    .info-box p {
+        font-size: 0.9em;
+    }
+}
+
+
+.about-us-section {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    color: #ffffff;
+    position: relative; /* Change to relative */
+    margin-top: 50px; /* Add margin-top if needed */
+    left: 0; /* Reset left position */
+    transform: none; /* Remove transform */
+}
+
+
+.about-us-section h1 {
+    font-size: 2em;
+    color: #ffffff;
+    margin: 0;
+    padding: 10px;
+}
+
+.about-us-subtitle {
+    font-family: 'Lexend', sans-serif;
+    font-size: 0.9em; /* Small font size */
+    color: #716E6C; /* Darker grey color */
+    margin: 10px 0 0; /* Adds a bit of space above the subtitle */
+    line-height: 1.4; /* Line height for readability */
+    font-weight: 300; /* Thinner font weight */
+    **text-align: center;** /* Center-align the text */
+}
+
+
+
+
+/* Glow effect at the bottom of the gradient, overlapping the black section */
+.glow-bottom {
+    position: absolute;
+    bottom: -23px;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1000;
+    pointer-events: none;
+    overflow: visible; /* Allow overflow for glows */
+}
+
+/* Left Glow */
+.glow-left {
+    width: 50%;
+    height: 25%;
+    background: radial-gradient(
+        circle at bottom left,
+        rgba(255, 255, 255, 0.7),
+        transparent 90%
+    );
+}
+
+/* Right Glow */
+.glow-right {
+    width: 50%;
+    height: 25%;
+    background: radial-gradient(
+        circle at bottom right,
+        rgba(255, 255, 255, 0.7),
+        transparent 90%
+    );
+}
+
+.down-arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px; /* Size of the white square */
+    height: 40px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 0 8px 4px rgba(255, 255, 255, 0.6); /* White glow effect */
+    cursor: pointer;
+    position: relative; /* Use relative positioning */
+    top: -20px; /* Move it down slightly to show full glow */
+    margin: 0 auto; /* Centers the icon horizontally */
+    transition: box-shadow 0.3s ease;
+}
+
+
+.down-arrow img {
+    width: 15px; /* Size of the arrowhead */
+    height: 15px;
+    filter: brightness(0); /* Ensures arrowhead is black */
+}
+
+@keyframes swishOutInVertical {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    20% {
+        transform: translateY(10px); /* Starts moving down */
+        opacity: 0;
+    }
+    30% {
+        transform: translateY(30px); /* Move further down */
+        opacity: 0; /* Fade out completely */
+    }
+    60% {
+        transform: translateY(-20px); /* Move back in from above */
+        opacity: 0;
+    }
+    80% {
+        transform: translateY(5px); /* Reappear gradually */
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(0); /* Return to starting position */
+        opacity: 1;
+    }
+}
+
+
+/* Apply vertical swish animation to down arrow */
+.down-arrow img {
+    width: 15px; /* Size of the arrowhead */
+    height: 15px;
+    filter: brightness(0); /* Ensures arrowhead is black */
+    display: inline-block;
+    animation: swishOutInVertical 1.5s ease-in-out infinite; /* Infinite vertical animation */
+}
+
+
+
+.stats-window {
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3); /* Light black with 50% transparency */
+    color: #fff;
+    width: auto;
+    padding: 10px;
+    border-radius: 10px;
+    border: 0.5px solid #414A4C; /* Black 1px outline */
+    font-family: 'Lexend', sans-serif;
+    text-align: left;
+    display: flex;
+    align-items: center; /* Center items vertically */
+    gap: 15px; /* Spacing between items */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+
+/* Single Line Styling for Each Stat Item */
+.stats-item {
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Spacing between icon and text */
+    font-size: 0.9em;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+/* Icon Styling with White Base */
+.stats-item .icon {
+    width: 24px;
+    height: 24px;
+    filter: brightness(0) invert(1); /* Start as white */
+    transition: filter 0.3s ease, transform 0.2s ease;
+}
+
+/* Text Styling Inline with Icon */
+.stat-text {
+    font-weight: 500;
+    display: inline;
+}
+
+/* Hover Effects for Icons */
+.stats-item.user-icon:hover .icon {
+    filter: invert(32%) sepia(100%) saturate(1279%) hue-rotate(183deg) brightness(99%) contrast(101%);
+    transform: rotate(5deg);
+}
+
+.stats-item.star-icon:hover .icon {
+    filter: invert(74%) sepia(96%) saturate(746%) hue-rotate(0deg) brightness(102%) contrast(102%);
+    transform: rotate(5deg);
+}
+
+.stats-item.tick-icon:hover .icon {
+    filter: invert(48%) sepia(100%) saturate(1730%) hue-rotate(62deg) brightness(104%) contrast(103%);
+    transform: rotate(5deg);
+}
+
+.browse-button {
+    font-family: 'Lexend', sans-serif;
+    font-weight: 500;
+    font-size: 1em;
+    color: #1c1c1c;
+    background-color: #ffdd57;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 10px;
+    display: inline-flex;
+    align-items: center; /* Ensures text and arrow are aligned vertically */
+    gap: 6px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.3s ease, padding 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.browse-button:hover {
+    background-color: #e6c850;
+    padding-right: 24px;
+}
+
+/* Arrow styling with movement and thicker stroke */
+.browse-button .button-arrow {
+    width: 16px;
+    height: 16px;
+    background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="%231c1c1c" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>');
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: transform 0.3s ease;
+}
+
+.browse-button:hover .button-arrow {
+    transform: translateX(8px); /* Moves arrow to the right on hover */
+}
+
+/* Text animation */
+.browse-button .button-text {
+    position: relative;
+    display: inline-block;
+}
+
+.browse-button:hover .button-text {
+    animation: swishOutIn 0.8s ease-in-out forwards;
+}
+
+/* Keyframes for swishOutIn */
+@keyframes swishOutIn {
+    0% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    20% {
+        transform: translateX(20px);
+        opacity: 1;
+    }
+    40% {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    60% {
+        transform: translateX(-60px);
+        opacity: 0;
+    }
+    80% {
+        transform: translateX(10px);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+
+
+/* Header Wrapper for positioning */
+.header-wrapper {
+    position: absolute;
+    top: 45%;
+    left: 7%;
+    transform: translateY(-50%);
+    text-align: left;
+    z-index: 1000;
+    max-width: 90%; /* Prevent overflow on mobile */
+}
+
+/* Fixed font size on larger screens */
+.header {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 65px; /* Fixed font size on desktop */
+    color: #fff;
+    white-space: normal;
+    line-height: 1.1;
+}
+
+/* Only allow responsive font size on mobile */
+@media (max-width: 600px) {
+    .header {
+        font-size: 12vw; /* Responsive font size only for mobile */
+    }
+}
+
+.header .arrow svg,
+.header .arrow img {
+    height: 1em;            /* Set height relative to the font size */
+    vertical-align: middle; /* Vertically center the SVG/image */
+    color: #ffdd57;
+}
+
+
+.header .blick {
+    display: inline-block;
+    cursor: pointer;
+    color: #ffdd57;
+    height: 1.2em;
+    line-height: 1.2;
+    overflow: hidden;
+    vertical-align: middle;
+}
+
+/* Subtitle adjustments */
+.subtitle {
+    font-family: 'Lexend', sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+    color: #b0b0b0;
+    margin-top: 10px;
+    line-height: 1.4em;
+    max-width: 90%;
+}
+
+.gradient-bg {
+    width: 100%;
+    height: 100vh; /* Fixed height for the gradient */
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(40deg, rgb(108, 0, 162), rgb(0, 17, 82));
+    z-index: -1;
+}
+
+
+.content-wrapper {
+    background-color: #100415; /* Black background below the gradient */
+    padding-top: 0; /* Remove extra padding */
+
+}
+
+/* Gradient Bubbles Container */
+.gradients-container {
+    filter: url(#goo) blur(40px);
+    width: 100%;
+    height: 100%;
+}
+
+/* Color and Gradient Variables */
+:root {
+    --color1: 18, 113, 255;
+    --color2: 221, 74, 255;
+    --color3: 100, 220, 255;
+    --color4: 200, 50, 50;
+    --color5: 180, 180, 50;
+    --color-interactive: 140, 100, 255;
+    --circle-size: 80%;
+    --blending: hard-light;
+}
+
+/* Gradient Bubbles */
+.g1, .g2, .g3, .g4, .g5, .interactive {
+    position: absolute;
+    mix-blend-mode: var(--blending);
+}
+
+.g1 {
+    background: radial-gradient(circle at center, rgba(var(--color1), 0.8) 0, rgba(var(--color1), 0) 50%) no-repeat;
+    width: var(--circle-size);
+    height: var(--circle-size);
+    top: calc(50% - var(--circle-size) / 2);
+    left: calc(50% - var(--circle-size) / 2);
+    transform-origin: center center;
+    animation: moveVertical 30s ease infinite;
+    opacity: 1;
+}
+
+.g2 {
+    background: radial-gradient(circle at center, rgba(var(--color2), 0.8) 0, rgba(var(--color2), 0) 50%) no-repeat;
+    width: var(--circle-size);
+    height: var(--circle-size);
+    top: calc(50% - var(--circle-size) / 2);
+    left: calc(50% - var(--circle-size) / 2);
+    transform-origin: calc(50% - 400px);
+    animation: moveInCircle 20s reverse infinite;
+    opacity: 1;
+}
+
+.g3 {
+    background: radial-gradient(circle at center, rgba(var(--color3), 0.8) 0, rgba(var(--color3), 0) 50%) no-repeat;
+    width: var(--circle-size);
+    height: var(--circle-size);
+    top: calc(50% - var(--circle-size) / 2 + 200px);
+    left: calc(50% - var(--circle-size) / 2 - 500px);
+    transform-origin: calc(50% + 400px);
+    animation: moveInCircle 40s linear infinite;
+    opacity: 1;
+}
+
+.g4 {
+    background: radial-gradient(circle at center, rgba(var(--color4), 0.8) 0, rgba(var(--color4), 0) 50%) no-repeat;
+    width: var(--circle-size);
+    height: var(--circle-size);
+    top: calc(50% - var(--circle-size) / 2);
+    left: calc(50% - var(--circle-size) / 2);
+    transform-origin: calc(50% - 200px);
+    animation: moveHorizontal 40s ease infinite;
+    opacity: 0.7;
+}
+
+.g5 {
+    background: radial-gradient(circle at center, rgba(var(--color5), 0.8) 0, rgba(var(--color5), 0) 50%) no-repeat;
+    width: calc(var(--circle-size) * 2);
+    height: calc(var(--circle-size) * 2);
+    top: calc(50% - var(--circle-size));
+    left: calc(50% - var(--circle-size));
+    transform-origin: calc(50% - 800px) calc(50% + 200px);
+    animation: moveInCircle 20s ease infinite;
+    opacity: 1;
+}
+
+.interactive {
+    background: radial-gradient(circle at center, rgba(var(--color-interactive), 0.8) 0, rgba(var(--color-interactive), 0) 50%) no-repeat;
+    width: 100%;
+    height: 100%;
+    top: -50%;
+    left: -50%;
+    opacity: 0.7;
+}
+
+/* Keyframes for Bubble Animations */
+@keyframes moveInCircle {
+    0% { transform: rotate(0deg); }
+    50% { transform: rotate(180deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes moveVertical {
+    0% { transform: translateY(-50%); }
+    50% { transform: translateY(50%); }
+    100% { transform: translateY(-50%); }
+}
+
+@keyframes moveHorizontal {
+    0% { transform: translateX(-50%) translateY(-10%); }
+    50% { transform: translateX(50%) translateY(10%); }
+    100% { transform: translateX(-50%) translateY(-10%); }
+}
+
+@keyframes breathingGlow {
+    0%, 100% {
+        box-shadow: 0 0 8px 8px rgba(255, 255, 255, 0.1);
+    }
+    50% {
+        box-shadow: 0 0 15px 15px rgba(255, 255, 255, 0.15);
+    }
+}
+
+
+
+body {
+    margin: 0;
+    background-color: ##100415; /* Black background for scrolling space */
+    font-family: 'Lexend', sans-serif;
+    height: auto; /* Allow body height to adjust based on content */
+}
+
+.navbar {
+    width: 90%; /* Default width on larger screens */
+    max-width: 450px;
+    height: 50px;
+    background-color: #1C1C1C;
+    border-radius: 20px;
+    margin: 0 auto; /* Center it horizontally */
+    top: 30px;
+    left: 50%; /* Center it using left 50% */
+    transform: translateX(-50%); /* Offset it back by half its width */
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    gap: 10px;
+    animation: breathingGlow 3s ease-in-out infinite;
+    position: fixed; /* Keep it fixed at the top */
+    z-index: 1000;
+    flex-wrap: wrap;
+}
+
+
+.logo {
+    height: 30px;
+    width: auto;
+    padding-left: 10px; /* Increased left padding */
+}
+
+/* Button Styles */
+.discord-button,
+.terms-button,
+.faqs-button,
+.reviews-button {
+    position: relative;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-family: 'Lexend', sans-serif;
+    font-size: 14px;
+    width: auto;
+    height: 32px; /* Ensure consistent height */
+    padding: 6px 10px;
+    box-sizing: border-box; /* Include padding and border in height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: transparent;
+    flex: 1;
+    max-width: 80px;
+    line-height: 1; /* Set line-height for vertical centering */
+}
+
+
+/* Initial text */
+.text-default {
+    position: absolute;
+    color: #8c8c8c;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Hover text */
+.text-hover {
+    position: absolute;
+    color: #dcdcdc;
+    transform: translateY(100%);
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Define a fixed bottom value for underlines */
+.discord-button::after,
+.terms-button::after,
+.faqs-button::after,
+.reviews-button::after {
+    content: '';
+    position: absolute;
+    bottom: 1px; /* Adjusted to align underlines */
+    left: 50%;
+    height: 3px;
+    width: var(--underline-width, 0);
+    background-color: #8c8c8c;
+    transform: translateX(-50%) scaleX(0);
+    transform-origin: center;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.discord-button:hover::after,
+.terms-button:hover::after,
+.faqs-button:hover::after,
+.reviews-button:hover::after {
+    transform: translateX(-50%) scaleX(1);
+    background-color: #dcdcdc;
+}
+
+/* Hover state for all buttons */
+.discord-button:hover .text-default,
+.terms-button:hover .text-default,
+.faqs-button:hover .text-default,
+.reviews-button:hover .text-default {
+    transform: translateY(-100%);
+    opacity: 0;
+}
+
+.discord-button:hover .text-hover,
+.terms-button:hover .text-hover,
+.faqs-button:hover .text-hover,
+.reviews-button:hover .text-hover {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.products-button {
+    font-family: 'Lexend', sans-serif;
+    font-size: 14px;
+    padding: 8px 12px;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    position: relative;
+    width: 85px;
+    height: 32px;
+    overflow: hidden;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 10px 3px rgba(141, 74, 218, 0.3);
+    animation: softGlow 3s ease-in-out infinite;
+}
+
+/* Slightly darker background on hover */
+.products-button:hover {
+    background-color: #e6e6e6;
+    animation: intenseGlow 0.5s ease-in-out forwards;
+}
+
+.products-button .text-default,
+.products-button .text-hover {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    white-space: nowrap;
+}
+
+/* Initial state for the default text */
+.products-button .text-default {
+    color: #000;
+    transform: translate(-50%, -50%);
+}
+
+/* Initial state for the hover text */
+.products-button .text-hover {
+    color: #000;
+    opacity: 0;
+    transform: translate(-50%, 50%);
+}
+
+/* Hover effect to animate the push */
+.products-button:hover .text-default {
+    transform: translate(-50%, -150%);
+    opacity: 0;
+}
+
+.products-button:hover .text-hover {
+    transform: translate(-50%, -50%);
+    opacity: 1;
+}
+
+/* Keyframes for soft purple pulsing glow */
+@keyframes softGlow {
+    0%, 100% {
+        box-shadow: 0 0 10px 3px rgba(141, 74, 218, 0.3);
+    }
+    50% {
+        box-shadow: 0 0 15px 6px rgba(141, 74, 218, 0.4);
+    }
+}
+
+/* Keyframes for intensified purple glow on hover */
+@keyframes intenseGlow {
+    0% {
+        box-shadow: 0 0 15px 6px rgba(141, 74, 218, 0.5);
+    }
+    100% {
+        box-shadow: 0 0 25px 10px rgba(141, 74, 218, 0.6);
+    }
+}
+
+/* Superscript styling for "s" in FAQs */
+.superscript {
+    font-size: 0.6em;
+    vertical-align: super;
+}
+
+/* Media Query for Mobile Screens */
+@media (max-width: 500px) {
+    .navbar {
+        width: 85%; /* Reduce navbar width on mobile */
+    }
+
+    .discord-button,
+    .faqs-button,
+    .reviews-button {
+        margin-right: 2px; /* Add a 2px gap between these buttons */
+    }
+
+    .discord-button:last-of-type,
+    .faqs-button:last-of-type,
+    .reviews-button:last-of-type {
+        margin-right: 0; /* Remove gap after the last button */
+    }
+
+    .products-button {
+        font-size: 12px;
+        max-width: 70px;
+    }
+
+    .superscript {
+        display: none;
+    }
+
+    .terms-button {
+        display: none; /* Hide the Terms button on mobile */
+    }
+}

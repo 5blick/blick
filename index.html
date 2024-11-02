@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blick Biz</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;700&family=Dongle:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;700&family=Syne:wght@700&display=swap" rel="stylesheet">
+    <!-- Font Awesome CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-hYj8iDP+GxgGbGNmOEdNBBTjjLwgeWH9QYgD31UgZctM8uj5YJZ0LcY0VwuYLdfO1RGdE6qFf5P4S5s0p5c+JQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+</head>
+<body>
+  <div class="gradient-bg">
+
+    <!-- Gradient Background with Bubbles and SVG filter for effects -->
+    <svg xmlns="http://www.w3.org/2000/svg">
+        <defs>
+            <filter id="goo">
+                <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -8" result="goo" />
+                <feBlend in="SourceGraphic" in2="goo" />
+            </filter>
+        </defs>
+    </svg>
+    <div class="gradients-container">
+        <div class="g1"></div>
+        <div class="g2"></div>
+        <div class="g3"></div>
+        <div class="g4"></div>
+        <div class="g5"></div>
+        <div class="interactive"></div>
+    </div>
+
+    <div class="glow-bottom">
+        <div class="glow-left"></div>
+        <div class="glow-right"></div>
+    </div>
+</div>
+
+<div class="down-arrow">
+    <img src="assets/arrowhead.png" alt="Down Arrow">
+</div>
+
+  <div class="content-wrapper">
+    <div class="header-wrapper">
+      <div class="header">
+          Shop quick, Shop slick,<br>
+          <span class="arrow">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+          </span>
+          Shop <span class="blick">BLICK</span>
+      </div>
+      <div class="subtitle">
+          Fast, affordable, and easy.<br>
+          Products that meet your needs.
+      </div>
+
+      <!-- Browse Button and Stats Container -->
+      <div class="browse-button-container">
+    <button class="browse-button">
+        <span class="button-text">Browse</span>
+        <span class="button-arrow"></span>
+    </button>
+</div>
+
+
+
+        <!-- Statistics Window -->
+        <div class="stats-window">
+            <div class="stats-item user-icon" onclick="window.open('https://discord.gg/blickbiz', '_blank')">
+                <img src="https://img.icons8.com/?size=96&id=ABBSjQJK83zf&format=png" alt="User Icon" class="icon" />
+                <span class="stat-text">98</span>
+            </div>
+            <div class="stats-item star-icon" onclick="window.open('https://blickbiz.sellauth.com/feedback', '_blank')">
+                <img src="https://img.icons8.com/?size=96&id=83166&format=png" alt="Star Icon" class="icon" />
+                <span class="stat-text">36</span>
+            </div>
+            <div class="stats-item tick-icon" onclick="window.open('https://discord.com/channels/1287349958567006230/1287484592651239487', '_blank')">
+                <img src="https://img.icons8.com/?size=60&id=98955&format=png" alt="Tick Icon" class="icon" />
+                <span class="stat-text">138</span>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="about-us-section">
+      <h1 class="animate-from-top">ABOUT US</h1>
+      <p class="about-us-subtitle animate-from-top">
+          Blick, quality products, fast delivery, hassle-free shopping.
+      </p>
+  </div>
+
+  <div class="content-wrapper">
+      <!-- Info Boxes Grid -->
+      <div class="info-grid">
+    <div class="info-box animate-staggered-1">
+        <div class="icon-container">
+            <i class="fas fa-users"></i>
+        </div>
+        <h3>Trusted by Hundreds</h3>
+        <p>
+Join a vast community of satisfied customers who rely on us for unparalleled quality and reliability.
+                  Our commitment to excellence has earned us the trust of clients worldwide, making us a leader in the industry.
+</p>
+    </div>
+    <div class="info-box animate-staggered-1">
+        <div class="icon-container">
+            <i class="fas fa-shipping-fast"></i>
+        </div>
+        <h3>Rapid Restocking</h3>
+        <p>
+We understand the importance of timely availability.<br>
+                  That's why we ensure popular items are quickly replenished to meet your demands without delay, keeping your business running smoothly.
+</p>
+    </div>
+    <div class="info-box animate-staggered-2">
+        <div class="icon-container">
+            <i class="fas fa-user-tie"></i>
+        </div>
+        <h3>Experienced Team</h3>
+        <p>
+Our skilled professionals bring years of expertise to provide exceptional service.<br>
+                  From consultation to delivery, we ensure every detail meets your expectations, offering personalized solutions.
+</p>
+    </div>
+    <div class="info-box animate-staggered-2">
+        <div class="icon-container">
+            <i class="fas fa-star"></i>
+        </div>
+        <h3>Top Quality Products</h3>
+        <p>
+	We offer only the best products that meet rigorous quality standards.<br>
+                  Our selection process guarantees durability and performance in every purchase, giving you peace of mind.
+	</p>
+    </div>
+</div>
+
+<div class="about-us-section products-section">
+    <h1 class="animate-from-top">PRODUCTS</h1>
+    <p class="about-us-subtitle animate-from-top">
+        Blick offers a wide range of quality products.
+    </p>
+</div>
+
+  <div class="products-section">
+    <!-- Robux B/T Group -->
+    <div class="product-group-card">
+        <h2><i class="fas fa-robot"></i> Robux B/T</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <h3>1000 Robux B/T</h3>
+                <p class="price">$4.50</p>
+                <ul class="features">
+                    <li><i class="fas fa-bolt"></i> Instant Delivery</li>
+                    <li><i class="fas fa-shield-alt"></i> Secure Purchase</li>
+                    <li><i class="fas fa-star"></i> Best Deal</li>
+                </ul>
+                <a href="https://blickbiz.sellauth.com/product/1000-r-robux-bt" class="purchase-button">Purchase</a>
+            </div>
+            <div class="product-card">
+                <h3>2500 Robux B/T</h3>
+                <p class="price">$11.25</p>
+                <ul class="features">
+                    <li><i class="fas fa-star"></i> High Demand</li>
+                    <li><i class="fas fa-lock"></i> Safe Transaction</li>
+                    <li><i class="fas fa-thumbs-up"></i> Popular Choice</li>
+                </ul>
+                <a href="https://blickbiz.sellauth.com/product/2500-r-robux-bt" class="purchase-button">Purchase</a>
+            </div>
+            <div class="product-card">
+                <h3>5000 Robux B/T</h3>
+                <p class="price">$22.50</p>
+                <ul class="features">
+                    <li><i class="fas fa-clock"></i> Fast Support</li>
+                    <li><i class="fas fa-lock"></i> 100% Secure</li>
+                    <li><i class="fas fa-heart"></i> Customer Favorite</li>
+                </ul>
+                <a href="https://blickbiz.sellauth.com/product/5000-r-robux" class="purchase-button">Purchase</a>
+            </div>
+            <div class="product-card">
+                <h3>7500 Robux B/T</h3>
+                <p class="price">$33.75</p>
+                <ul class="features">
+                    <li><i class="fas fa-check-circle"></i> Verified Sellers</li>
+                    <li><i class="fas fa-lock"></i> Secure Payment</li>
+                    <li><i class="fas fa-bolt"></i> Instant Access</li>
+                </ul>
+                <a href="https://blickbiz.sellauth.com/product/7500-r-robux" class="purchase-button">Purchase</a>
+            </div>
+            <div class="product-card">
+                <h3>10000 Robux B/T</h3>
+                <p class="price">$45.00</p>
+                <ul class="features">
+                    <li><i class="fas fa-star"></i> High Quality</li>
+                    <li><i class="fas fa-gift"></i> Best Value</li>
+                    <li><i class="fas fa-heart"></i> Customer Approved</li>
+                </ul>
+                <a href="https://blickbiz.sellauth.com/product/10000-r-robux-bt" class="purchase-button">Purchase</a>
+            </div>
+            <div class="product-card">
+                <h3>22500 Robux A/T</h3>
+                <p class="price">$101.25</p>
+                <ul class="features">
+                    <li><i class="fas fa-award"></i> Premium Quality</li>
+                    <li><i class="fas fa-trophy"></i> High Value</li>
+                    <li><i class="fas fa-shield-alt"></i> Secure & Trusted</li>
+                </ul>
+                <a href="https://blickbiz.sellauth.com/product/22500-r-robux-bt" class="purchase-button">Purchase</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Robux A/T Group -->
+    <div class="product-group-card">
+        <h2><i class="fas fa-robot"></i> Robux A/T</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <h3>1000 Robux A/T</h3>
+                <p class="price">$6.45</p>
+                <ul class="features">
+                    <li><i class="fas fa-check-circle"></i> Verified Sellers</li>
+                    <li><i class="fas fa-lock"></i> Secure Payment</li>
+                    <li><i class="fas fa-bolt"></i> Instant Access</li>
+                </ul>
+                <a href="https://blickbiz.sellauth.com/product/1000-r-robux-at" class="purchase-button">Purchase</a>
+            </div>
+            <div class="product-card">
+                <h3>2500 Robux A/T</h3>
+                <p class="price">$16.13</p>
+                <ul class="features">
+                    <li><i class="fas fa-star"></i> Trusted Vendor</li>
+                    <li><i class="fas fa-clock"></i> 24/7 Service</li>
+                    <li><i class="fas fa-handshake"></i> Safe Transactions</li>
+                </ul>
+                <a href="https://blickbiz.sellauth.com/product/2500-r-robux-at" class="purchase-button">Purchase</a>
+            </div>
+            <div class="product-card">
+                <h3>5000 Robux A/T</h3>
+                <p class="price">$32.25</p>
+                <ul class="features">
+                    <li><i class="fas fa-trophy"></i> Best Seller</li>
+                    <li><i class="fas fa-lock"></i> Safe & Secure</li>
+                    <li><i class="fas fa-heart"></i> Highly Rated</li>
+                </ul>
+                <a href="https://blickbiz.sellauth.com/product/5000-r-robux-at" class="purchase-button">Purchase</a>
+            </div>
+            <div class="product-card">
+                <h3>7500 Robux A/T</h3>
+                <p class="price">$48.39</p>
+                <ul class="features">
+                    <li><i class="fas fa-gem"></i> Top Quality</li>
+                    <li><i class="fas fa-shield-alt"></i> Trusted Service</li>
+                    <li><i class="fas fa-thumbs-up"></i> Popular Choice</li>
+                </ul>
+                <a href="https://blickbiz.sellauth.com/product/7500-r-robux-at" class="purchase-button">Purchase</a>
+            </div>
+            <div class="product-card">
+                <h3>10000 Robux A/T</h3>
+                <p class="price">$64.50</p>
+                <ul class="features">
+                    <li><i class="fas fa-award"></i> Premium Quality</li>
+                    <li><i class="fas fa-certificate"></i> Verified Product</li>
+                    <li><i class="fas fa-user-shield"></i> Secure Purchase</li>
+                </ul>
+                <a href="https://blickbiz.sellauth.com/product/10000-r-robux-at" class="purchase-button">Purchase</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Vbucks Group -->
+    <div class="product-group-card">
+        <h2><i class="fas fa-coins"></i> Vbucks</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <h3>13.5K Vbucks</h3>
+                <p class="price">$35.00</p>
+                <ul class="features">
+                    <li><i class="fas fa-truck"></i> Immediate Dispatch</li>
+                    <li><i class="fas fa-shield-alt"></i> Secure Transaction</li>
+                    <li><i class="fas fa-thumbs-up"></i> Trusted Provider</li>
+                </ul>
+                <a href="https://blickbiz.sellauth.com/product/135k-vbucks" class="purchase-button">Purchase</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Nitro Group -->
+    <div class="product-group-card">
+        <h2><i class="fas fa-rocket"></i> Nitro</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <h3>Nitro 1 Month</h3>
+                <p class="price">$5.00</p>
+                <ul class="features">
+                    <li><i class="fas fa-bolt"></i> Quick Delivery</li>
+                    <li><i class="fas fa-lock"></i> Safe Payment</li>
+                    <li><i class="fas fa-star"></i> Limited Time Offer</li>
+                </ul>
+                <a href="https://blickbiz.sellauth.com/product/nitro-1-month" class="purchase-button">Purchase</a>
+            </div>
+            <div class="product-card">
+                <h3>Nitro 1 Year</h3>
+                <p class="price">$35.00</p>
+                <ul class="features">
+                    <li><i class="fas fa-trophy"></i> Top Seller</li>
+                    <li><i class="fas fa-shield-alt"></i> Safe Purchase</li>
+                    <li><i class="fas fa-thumbs-up"></i> Best Value</li>
+                </ul>
+                <a href="https://blickbiz.sellauth.com/product/nitro-1-year" class="purchase-button">Purchase</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Server Boosts Group -->
+    <div class="product-group-card">
+        <h2><i class="fas fa-server"></i> Server Boosts</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <h3>14 Boosts (1 Month)</h3>
+                <p class="price">$7.50</p>
+                <ul class="features">
+                    <li><i class="fas fa-cogs"></i> Enhance Server</li>
+                    <li><i class="fas fa-star"></i> Quality Boost</li>
+                    <li><i class="fas fa-lock"></i> Secure Checkout</li>
+                </ul>
+                <a href="https://blickbiz.sellauth.com/product/14-boosts-1-month" class="purchase-button">Purchase</a>
+            </div>
+            <div class="product-card">
+                <h3>14 Boosts (3 Months)</h3>
+                <p class="price">$12.50</p>
+                <ul class="features">
+                    <li><i class="fas fa-sync"></i> Subscription Option</li>
+                    <li><i class="fas fa-gem"></i> High Quality</li>
+                    <li><i class="fas fa-thumbs-up"></i> Best Seller</li>
+                </ul>
+                <a href="https://blickbiz.sellauth.com/product/14-boosts-3-months" class="purchase-button">Purchase</a>
+            </div>
+        </div>
+    </div>
+    <!-- Subscriptions Group -->
+    <div class="product-group-card">
+        <h2><i class="fas fa-film"></i> Subscriptions</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <h3>Netflix Lifetime</h3>
+                <p class="price">$12.50</p>
+                <ul class="features">
+                    <li><i class="fas fa-play"></i> Unlimited Streaming</li>
+                    <li><i class="fas fa-thumbs-up"></i> High Quality</li>
+                    <li><i class="fas fa-clock"></i> Lifetime Access</li>
+                </ul>
+                <a href="https://blickbiz.sellauth.com/product/netflix-lifetime" class="purchase-button">Purchase</a>
+            </div>
+            <div class="product-card">
+                <h3>Spotify Lifetime</h3>
+                <p class="price">$12.50</p>
+                <ul class="features">
+                    <li><i class="fas fa-music"></i> Premium Access</li>
+                    <li><i class="fas fa-thumbs-up"></i> Ad-Free Listening</li>
+                    <li><i class="fas fa-clock"></i> Lifetime Access</li>
+                </ul>
+                <a href="https://blickbiz.sellauth.com/product/spotify-lifetime" class="purchase-button">Purchase</a>
+            </div>
+            <div class="product-card">
+                <h3>Spotify Main Lifetime</h3>
+                <p class="price">$25.00</p>
+                <ul class="features">
+                    <li><i class="fas fa-headphones"></i> High Quality Audio</li>
+                    <li><i class="fas fa-ad"></i> Ad-Free Listening</li>
+                    <li><i class="fas fa-heart"></i> Lifetime Access</li>
+                </ul>
+                <a href="https://blickbiz.sellauth.com/product/spotify-main-lifetime" class="purchase-button">Purchase</a>
+            </div>
+            <div class="product-card">
+                <h3>Disney+ Lifetime</h3>
+                <p class="price">$12.50</p>
+                <ul class="features">
+                    <li><i class="fas fa-film"></i> Exclusive Content</li>
+                    <li><i class="fas fa-tv"></i> Unlimited Access</li>
+                    <li><i class="fas fa-clock"></i> Lifetime Access</li>
+                </ul>
+                <a href="https://blickbiz.sellauth.com/product/disney-lifetime" class="purchase-button">Purchase</a>
+            </div>
+            <div class="product-card">
+                <h3>Crunchyroll Lifetime</h3>
+                <p class="price">$12.50</p>
+                <ul class="features">
+                    <li><i class="fas fa-heart"></i> Anime Collection</li>
+                    <li><i class="fas fa-tv"></i> HD Streaming</li>
+                    <li><i class="fas fa-clock"></i> Lifetime Access</li>
+                </ul>
+                <a href="https://blickbiz.sellauth.com/product/crunchyroll-lifetime" class="purchase-button">Purchase</a>
+            </div>
+            <div class="product-card">
+                <h3>Dazn Lifetime</h3>
+                <p class="price">$12.50</p>
+                <ul class="features">
+                    <li><i class="fas fa-basketball-ball"></i> Sports Streaming</li>
+                    <li><i class="fas fa-tv"></i> Live Matches</li>
+                    <li><i class="fas fa-clock"></i> Lifetime Access</li>
+                </ul>
+                <a href="https://blickbiz.sellauth.com/product/dazn-lifetime" class="purchase-button">Purchase</a>
+            </div>
+            <div class="product-card">
+                <h3>HBOMax Lifetime</h3>
+                <p class="price">$12.50</p>
+                <ul class="features">
+                    <li><i class="fas fa-film"></i> Exclusive Shows</li>
+                    <li><i class="fas fa-tv"></i> Unlimited Streaming</li>
+                    <li><i class="fas fa-clock"></i> Lifetime Access</li>
+                </ul>
+                <a href="https://blickbiz.sellauth.com/product/hbomax-lifetime" class="purchase-button">Purchase</a>
+            </div>
+            <div class="product-card">
+                <h3>NordVPN Lifetime</h3>
+                <p class="price">$12.50</p>
+                <ul class="features">
+                    <li><i class="fas fa-shield-alt"></i> Secure Browsing</li>
+                    <li><i class="fas fa-lock"></i> Privacy Protection</li>
+                    <li><i class="fas fa-clock"></i> Lifetime Access</li>
+                </ul>
+                <a href="https://blickbiz.sellauth.com/product/nordvpn-lifetime" class="purchase-button">Purchase</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- TikTok Boost Group -->
+    <div class="product-group-card">
+        <h2><i class="fab fa-tiktok"></i> TikTok Boost</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <h3>1K TikTok Followers</h3>
+                <p class="price">$5.00</p>
+                <ul class="features">
+                    <li><i class="fas fa-users"></i> Grow Your Audience</li>
+                    <li><i class="fas fa-bolt"></i> Instant Delivery</li>
+                    <li><i class="fas fa-thumbs-up"></i> Trusted Service</li>
+                </ul>
+                <a href="https://blickbiz.sellauth.com/product/1k-tiktok-followers" class="purchase-button">Purchase</a>
+            </div>
+            <div class="product-card">
+                <h3>1K TikTok Likes</h3>
+                <p class="price">$3.00</p>
+                <ul class="features">
+                    <li><i class="fas fa-heart"></i> Boost Engagement</li>
+                    <li><i class="fas fa-fire"></i> Fast Delivery</li>
+                    <li><i class="fas fa-shield-alt"></i> Secure Purchase</li>
+                </ul>
+                <a href="https://blickbiz.sellauth.com/product/1k-tiktok-likes" class="purchase-button">Purchase</a>
+            </div>
+            <div class="product-card">
+                <h3>1K TikTok Views</h3>
+                <p class="price">$1.00</p>
+                <ul class="features">
+                    <li><i class="fas fa-eye"></i> Gain Visibility</li>
+                    <li><i class="fas fa-rocket"></i> Rapid Delivery</li>
+                    <li><i class="fas fa-shield-alt"></i> Safe Purchase</li>
+                </ul>
+                <a href="https://blickbiz.sellauth.com/product/1k-tiktok-views" class="purchase-button">Purchase</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Instagram Boost Group -->
+    <div class="product-group-card">
+        <h2><i class="fab fa-instagram"></i> Instagram Boost</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <h3>1K Insta Followers</h3>
+                <p class="price">$3.00</p>
+                <ul class="features">
+                    <li><i class="fas fa-users"></i> Increase Follower Count</li>
+                    <li><i class="fas fa-bolt"></i> Quick Delivery</li>
+                    <li><i class="fas fa-star"></i> Trusted Service</li>
+                </ul>
+                <a href="https://blickbiz.sellauth.com/product/1k-insta-followers" class="purchase-button">Purchase</a>
+            </div>
+            <div class="product-card">
+                <h3>1K Insta Likes</h3>
+                <p class="price">$2.00</p>
+                <ul class="features">
+                    <li><i class="fas fa-heart"></i> Boost Post Likes</li>
+                    <li><i class="fas fa-fire"></i> Instant Effect</li>
+                    <li><i class="fas fa-lock"></i> Secure Purchase</li>
+                </ul>
+                <a href="https://blickbiz.sellauth.com/product/1k-insta-likes" class="purchase-button">Purchase</a>
+            </div>
+            <div class="product-card">
+                <h3>1K Insta Views</h3>
+                <p class="price">$3.00</p>
+                <ul class="features">
+                    <li><i class="fas fa-eye"></i> Gain Visibility</li>
+                    <li><i class="fas fa-chart-line"></i> Instant Results</li>
+                    <li><i class="fas fa-shield-alt"></i> Secure Purchase</li>
+                </ul>
+                <a href="https://blickbiz.sellauth.com/product/1k-insta-views" class="purchase-button">Purchase</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- YouTube Boost Group -->
+    <div class="product-group-card">
+        <h2><i class="fab fa-youtube"></i> YouTube Boost</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <h3>1K YouTube Followers</h3>
+                <p class="price">$5.50</p>
+                <ul class="features">
+                    <li><i class="fas fa-users"></i> Grow Your Channel</li>
+                    <li><i class="fas fa-bolt"></i> Fast Results</li>
+                    <li><i class="fas fa-shield-alt"></i> Trusted Service</li>
+                </ul>
+                <a href="https://blickbiz.sellauth.com/product/1k-youtube-followers" class="purchase-button">Purchase</a>
+            </div>
+            <div class="product-card">
+                <h3>1K YouTube Likes</h3>
+                <p class="price">$3.00</p>
+                <ul class="features">
+                    <li><i class="fas fa-thumbs-up"></i> Increase Video Likes</li>
+                    <li><i class="fas fa-fire"></i> Quick Delivery</li>
+                    <li><i class="fas fa-lock"></i> Secure Purchase</li>
+                </ul>
+                <a href="https://blickbiz.sellauth.com/product/1k-youtube-likes" class="purchase-button">Purchase</a>
+            </div>
+            <div class="product-card">
+                <h3>1K YouTube Views</h3>
+                <p class="price">$3.50</p>
+                <ul class="features">
+                    <li><i class="fas fa-eye"></i> Boost Video Views</li>
+                    <li><i class="fas fa-rocket"></i> Immediate Impact</li>
+                    <li><i class="fas fa-shield-alt"></i> Trusted Source</li>
+                </ul>
+                <a href="https://blickbiz.sellauth.com/product/1k-youtube-views" class="purchase-button">Purchase</a>
+            </div>
+        </div>
+    </div>
+    <section class="faq-section">
+        <h2>FAQ<sup class="superscript">s</sup></h2>
+        <p class="faq-subtitle">Everything You Need to Know.</p>
+    </section>
+    <div class="faq-box glowing-faq">
+    <div class="faq-question">
+        What is the difference between Robux B/T and Robux A/T?
+        <span class="arrow">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </span>
+    </div>
+    <div class="faq-answer">
+        Roblox has a 30% tax on all robux gamepass purchases.<br>If you bought 1000 Robux B/T, you would receive 700, 1000 - 30% = 700.<br>If you were to buy 1000 A/T, you would receive 1000 because you will be asked to set your gamepass price to 1429, which is 1000 + 30%.
+    </div>
+</div>
+
+
+    <div class="faq-box">
+        <div class="faq-question">
+            How do I get my product after paying?
+            <span class="arrow">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </span>
+        </div>
+        <div class="faq-answer">
+            You will receive an order summary via email. Please create a ticket in Blick's Discord server with your order ID.
+        </div>
+    </div>
+
+    <div class="faq-box">
+        <div class="faq-question">
+            How long does delivery take?
+            <span class="arrow">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </span>
+        </div>
+        <div class="faq-answer">
+            Usually, delivery takes up to 1 hour. In rare cases, it may take 24-48+ hours.
+        </div>
+    </div>
+
+    <div class="faq-box">
+        <div class="faq-question">
+            What if my product breaks?
+            <span class="arrow">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </span>
+        </div>
+        <div class="faq-answer">
+            We provide an 8-hour warranty on all subscriptions. We provide a 1-hour warranty on all Nitros. No vouch within 1 hour, no warranty.
+        </div>
+    </div>
+
+    <div class="faq-box">
+        <div class="faq-question">
+            I have another question
+            <span class="arrow">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </span>
+        </div>
+        <div class="faq-answer">
+            For further questions and help, contact us at Blick's Discord server.
+        </div>
+
+</div>
+
+<section class="terms-section">
+    <h2>TERMS</h2>
+    <p class="terms-subtitle">Our Commitment and Your Responsibilities</p>
+    <div class="terms-box">
+        <h3>Product Terms & Services</h3>
+        <ul>
+            <li><strong>Supplier Responsibility:</strong> We are not responsible for scams by our suppliers.</li>
+            <li><strong>Order Cancellation:</strong> If an order is cancelled, 60% will be refunded.</li>
+            <li><strong>Vouches and Warranty:</strong> Failure to provide a vouch and review within 1 hour will void the warranty.</li>
+            <li><strong>Lifetime Subscriptions:</strong> Lifetime translates to an account with auto-renewal on.</li>
+            <li><strong>Subscription Warranty:</strong> There is an 8-hour warranty on all subscriptions.</li>
+            <li><strong>Roblox Orders:</strong> We do not take responsibility for Roblox accounts/Robux getting banned or revoked.</li>
+            <li><strong>Nitro Responsibility:</strong> We are not responsible for auto-claims or revokes.</li>
+            <li><strong>Nitro Warranty:</strong> We provide a 60m+ warranty on all Nitros.</li>
+        </ul>
+    </div>
+</section>
+
+<!-- ... (rest of your HTML code remains unchanged) ... -->
+
+<footer class="footer">
+    <div class="footer-container">
+        <!-- Left Side (Logo and Description) -->
+        <div class="footer-left">
+            <div class="footer-logo">
+                <img src="assets/emblem.png" alt="Logo" class="logo">
+                <span class="footer-company-name">Blick Biz</span>
+            </div>
+            <p class="footer-description">
+                Blick Biz offers a one-stop shop for digital goods, specializing in Robux, Nitro, V-Bucks, and streaming service subscriptions. With competitive pricing and fast delivery, Blick Biz brings popular online currencies and entertainment options directly to you.
+            </p>
+        </div>
+        <!-- Right Side (Navigation Links and Payment Icons) -->
+        <div class="footer-right">
+            <p class="footer-nav-heading">Navigation</p> <!-- Add Navigation heading -->
+            <div class="footer-nav">
+                <a href="/home" class="footer-link">Home</a>
+                <a href="/about" class="footer-link">About Us</a>
+                <a href="/products" class="footer-link">Products</a>
+                <a href="/faqs" class="footer-link">FAQ's</a>
+                <a href="/terms" class="footer-link">Terms</a>
+                <a href="https://discord.com/users/1284155061819408428" target="_blank" class="footer-link">Contact Us</a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 BLICK BIZ. ALL RIGHTS RESERVED.</p>
+    </div>
+</footer>
+
+<!-- ... (rest of your HTML code remains unchanged) ... -->
+
+
+  <!-- Navbar Section -->
+  <div class="navbar">
+      <a href="https://blickbiz.com" class="logo-link">
+          <img src="assets/logo.png" alt="Logo" class="logo">
+      </a>
+      <a href="https://discord.gg/blickbiz" target="_blank" class="discord-button">
+          <span class="text-default">Discord</span>
+          <span class="text-hover">Discord</span>
+      </a>
+      <button class="terms-button">
+          <span class="text-default">Terms</span>
+          <span class="text-hover">Terms</span>
+      </button>
+      <button class="faqs-button">
+          <span class="text-default">FAQ<span class="superscript">s</span></span>
+          <span class="text-hover">FAQ<span class="superscript">s</span></span>
+      </button>
+      <a href="https://blickbiz.sellauth.com/feedback" target="_blank" class="reviews-button">
+          <span class="text-default">Reviews</span>
+          <span class="text-hover">Reviews</span>
+      </a>
+      <button class="products-button">
+          <span class="text-default">Products</span>
+          <span class="text-hover">Products</span>
+      </button>
+  </div>
+
+
+  <script src="js/script.js"></script>
+</body>
+</html>
